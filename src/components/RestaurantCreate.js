@@ -18,7 +18,7 @@ const RestaurantCreate = () => {
         try {
             const response = await api.post('restaurants/', formData);
             console.log(response.data);
-            navigate('/');
+            navigate('/'); //window.location.href = '/'
         } catch (error) {
             console.error(error);
         }
